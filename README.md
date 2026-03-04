@@ -12,12 +12,12 @@
 将以下文件放在**同一文件夹**中：
 ```
 MC服务器目录/
-├─ mc_server_manager.exe  # 本工具主程序
+├─ SCMSL.exe  # 本工具主程序
 ├─ minecraft_server.1.20.1.jar  # Minecraft服务端JAR文件
 ```
 
 ### 2. 首次配置
-1. 双击 `mc_server_manager.exe`，程序会自动生成 `server_config.ini` 配置文件并提示退出
+1. 双击 `SCMSL.exe`，程序会自动生成 `server_config.ini` 配置文件并提示退出
 2. 用记事本打开 `server_config.ini`，根据实际情况修改配置：
    ```ini
    [SERVER]
@@ -35,7 +35,7 @@ MC服务器目录/
    ```
 
 ### 3. 启动/停止服务器
-1. 重新双击 `mc_server_manager.exe`，出现操作菜单：
+1. 重新双击 `SCMSL.exe`，出现操作菜单：
    ```
    ===== Minecraft 服务器管理器 =====
    1. 启动服务器
@@ -82,7 +82,7 @@ MC服务器目录/
 ## 🎨 自定义图标（可选）
 若需修改EXE图标，可参考以下步骤：
 1. 将 PNG 图片转换为 ICO 格式（推荐尺寸：64×64/128×128）
-2. 重新打包脚本：`pyinstaller -F -i 自定义图标.ico mc_server_manager.py`
+2. 重新打包脚本：`pyinstaller -F -i 自定义图标.ico SCMSL.py`
 
 ## 📄 免责声明
 本工具仅用于个人学习和非商业用途，使用前请确保已阅读并同意 Minecraft EULA 协议（https://account.mojang.com/documents/minecraft_eula）。
